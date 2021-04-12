@@ -1,0 +1,11 @@
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/bin/Debug/advent1.exe.config
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/bin/Debug/advent1.exe
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/bin/Debug/advent1.pdb
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/bin/Debug/advent1.xml
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.vbprojAssemblyReference.cache
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.Resources.resources
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.vbproj.GenerateResource.cache
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.vbproj.CoreCompileInputs.cache
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.exe
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.xml
+/Users/grahamsnowdon/RiderProjects/adventofcode/advent1/obj/Debug/advent1.pdb
