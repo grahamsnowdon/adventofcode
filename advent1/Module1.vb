@@ -1,7 +1,8 @@
 ﻿Module Module1
 
     Sub Main()
-        'Testy Test test
+        Console.WriteLine("Advent of code program")
+        Console.WriteLine("An hour of code everyday")
     End Sub
 
 End Module
