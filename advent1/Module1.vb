@@ -1,15 +1,18 @@
 ﻿imports System.IO
+Imports System.Runtime.InteropServices
+
 Module Module1
 
     Sub Main()
-        Console.WriteLine("Which Day?")
-        Dim adventDay As Integer = Console.ReadLine()
-        Dim fullSubName as String
-        fullSubName = "adventDay" & adventDay
-        fullSubName
+        Console.WriteLine("Welcome to Advent of code Challenges Xmas 2020")
+        Console.WriteLine("This skips the first day and first ")
+        Console.WriteLine("challenge of second day because when I ")
+        Console.WriteLine("came back to them in 2021 that was as far as I'd got")
+        userChoice()
     End Sub
     
     Sub adventDay2()
+        Console.WriteLine("Welcome to day 2")
         Dim passwords As new StreamReader ("input.txt")
         'Console.WriteLine(passwords.ReadToEnd())
         Dim fileContents(999) as String
@@ -34,21 +37,41 @@ Module Module1
             strHolder = Split(line,"-",2)
             check1 = Val(strHolder(0))
             check2 = Val(strHolder(1))
-            Console.WriteLine("First number " & check1)
-            Console.WriteLine("Second number " & check2)
+           ' Console.WriteLine("First number " & check1)
+           ' Console.WriteLine("Second number " & check2)
             strHolder2 = Split(line, " ", -1)
             checkChar = strHolder2(1)
-            Console.WriteLine("Check Char is " & checkChar)
+            'Console.WriteLine("Check Char is " & checkChar)
             lastBit = (strHolder2(2))
             targetChar1 = lastBit(check1 - 1)
             targetChar2 = lastBit(check2 - 1)
             If checkChar = targetChar1 And targetChar2 <> checkChar Or checkChar <> targetChar1 And targetChar2 = checkChar Then
-                Console.WriteLine("DING DING DING")
+                'Console.WriteLine("DING DING DING")
                 valid += 1
             End If
             
         Next
-       Console.WriteLine(valid)
-        
+       Console.WriteLine("There are " & valid & " valid passwords for the second challenge")
+        userChoice()
     End Sub
+    Sub adventDay3()
+        Console.WriteLine("Welcome to day 3")
+        userChoice()
+    End Sub
+    
+    Sub userChoice()
+        Console.WriteLine("")
+        Console.WriteLine("Which Day?")
+        Console.WriteLine("2...25? Or 999 to Exit")
+        Dim userChoice as Integer = Console.ReadLine()
+        Select Case userChoice
+            Case 2
+                adventDay2()
+            Case 3
+                adventDay3()
+            Case 999
+                Exit Sub        
+        End Select
+    End Sub
+    
 End Module
