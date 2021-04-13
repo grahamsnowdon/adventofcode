@@ -13,7 +13,7 @@ Module Module1
     
     Sub adventDay2()
         Console.WriteLine("Welcome to day 2")
-        Dim passwords As new StreamReader ("input.txt")
+        Dim passwords As new StreamReader ("input2.txt")
         'Console.WriteLine(passwords.ReadToEnd())
         Dim fileContents(999) as String
         Dim counter as Integer = 0
@@ -56,6 +56,29 @@ Module Module1
     End Sub
     Sub adventDay3()
         Console.WriteLine("Welcome to day 3")
+        'TODO how to loop through the map using right three and down one? Two nested loops one for down 1 and then one for 3 right
+        'Todo need to keep a running total for position
+        'Todo need to loop back through the map if we hit the end of the line (It's 31 long)
+        'Todo recognise the char as #
+        'Todo return the number of #
+        
+        Dim map As new StreamReader ("input3.txt")
+        Dim lineCount = File.ReadAllLines("input3.txt").Length
+        Console.WriteLine(lineCount)
+        Dim fileContents(lineCount) as String
+        Dim counter as Integer = 0
+        
+        Do 
+            fileContents(counter) = map.ReadLine()
+            counter += 1
+        Loop Until map.EndOfStream
+        
+        for i = 0 to lineCount
+            Console.WriteLine(fileContents(i).Length)
+        Next
+        
+        map.Close()
+        
         userChoice()
     End Sub
     
