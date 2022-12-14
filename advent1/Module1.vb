@@ -5,6 +5,7 @@ Module Module1
 
     Sub Main()
         Console.WriteLine("Welcome to Advent of code Challenges Xmas 2020")
+        Console.Writeline("DOOOOOOOOOOOOD!!!!!!!!!!WHAAAAAAAASAAAAAAAAAPPPPPPPPP!!!!!!!!")
         Console.WriteLine("This skips the first day and first ")
         Console.WriteLine("challenge of second day because when I ")
         Console.WriteLine("came back to them in 2021 that was as far as I'd got")
